@@ -1,6 +1,3 @@
-use core::cmp;
-use itertools::Itertools;
-
 pub fn part1(input: String) -> anyhow::Result<String> {
     let res: u32 = input
         .lines()
