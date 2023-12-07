@@ -2,6 +2,7 @@ use std::fs;
 
 mod day01;
 mod day02;
+mod day03;
 
 fn main() {
     let jobs: &[(fn(String) -> anyhow::Result<String>, &str)] = &[
@@ -9,6 +10,8 @@ fn main() {
         (day01::part2, "inputs/day01.txt"),
         (day02::part1, "inputs/day02.txt"),
         (day02::part2, "inputs/day02.txt"),
+        (day03::part1, "inputs/day03.txt"),
+        (day03::part2, "inputs/day03.txt"),
     ];
 
     for j in jobs {
